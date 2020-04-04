@@ -1,0 +1,51 @@
+/* Media page */
+.feed-type {
+  background-color: #888;
+  border: 4px dashed #aaffdd;
+  color: #fff;
+  margin: 10px 0;
+  padding: 15px 0;
+  font-size: 20px;
+  font-family: 'Oswald';
+  text-align: center;
+}
+
+.social-subtitle {
+  font-size: 3rem;
+  color: #888;
+  border-left: 4px dashed #aaffdd;
+  border-right: 4px dashed #aaffdd;
+  margin-bottom: 5px;
+  text-align: center;
+  margin: 20px 0 40px;
+}
+
+.insil3nc3-vid {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.insil3nc3-prompt {
+  font-size: 2rem;
+  color: #ffd0aa;
+  border-left: 4px dashed #888;
+  border-right: 4px dashed #888;
+  margin-bottom: 5px;
+  text-align: center;
+  margin: 40px 0;
+}
+
+#twitter-section {
+  background-color:
+}
+
+
+#twitter-left {
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .sep-lines {
+    display: none;
+  }
+}

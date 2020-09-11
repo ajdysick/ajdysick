@@ -1,0 +1,79 @@
+/* Changes page background pattern */
+body {
+  background:
+    linear-gradient(135deg, #132238 25%, transparent 25%) -50px 0,
+    linear-gradient(225deg, #fff 25%, transparent 25%) -50px 0,
+    linear-gradient(315deg, #132238 25%, transparent 25%),
+    linear-gradient(45deg, #c7e7eb 25%, transparent 25%);
+    background-size: 100px 100px;
+    background-color: #393b3d;
+    opacity: 0.95;
+}
+
+/* Alters navbar on this page ONLY */
+#blog-navbar {
+  background-color: #ebf0f6;
+}
+
+/* Changes anchor tag color on this page only */
+#blog-navbar a {
+  color: #132238;
+}
+
+/* Changes anchor tag color (on hover) on this page only */
+#blog-navbar a:hover {
+  color: #afa04c;
+}
+
+#no-post-yet {
+  background-color: #ebf0f6;
+  height: 250px;
+  margin-top: 150px;
+}
+
+/* styles background of FOOTER and FOOTER navbar on this page ONLY */
+#blog-footer {
+  background-color: #ebf0f6;
+  color: #132238;
+  padding-top: 10px;
+}
+
+/* Changes anchor tag color of footer links on this page only */
+#blog-footer a {
+  color: #132238;
+}
+
+/* Changes anchor tag color (on hover) of footer links on this page only */
+#blog-footer a:hover {
+  color: #afa04c;
+}
+
+/* Adds padding to copyright (on this page ONLY) */
+#blog-copyright {
+  font-size: 0.85rem;
+  padding-bottom: 15px;
+}
+
+/* Places 'row' div in the center of the 'container' div */
+.info-container {
+  height: 150px;
+  width: auto;
+  margin-top: 15px;
+}
+
+/* Changes color of 'Sorry...Yet!' apology */
+.notification {
+  color: #132238;
+  font-weight: bold;
+}
+
+/* Changes color of 'check back later' prompt */
+.updates {
+  color: #393b3d;
+}
+
+/* Styles horizontal rule on blog.html page */
+.blog-horiz-rule {
+  border-width: 1.75px;
+  border-color: #afa04c;
+}

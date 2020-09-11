@@ -1,0 +1,132 @@
+/* Alters images to grayscale */
+.portfolio-img {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+}
+
+/* Sets recruiter image to a block and ensures it's always visible */
+.portfolio-img {
+  opacity: 1;
+  display: block;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+/* Sets parameters/style for button and its container to appear */
+.btn-container {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  width: 85%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.portfolio-cont-col:hover .portfolio-img {
+  opacity: 0.3;
+}
+
+.portfolio-cont-col:hover .btn-container {
+  opacity: 1;
+}
+
+/* Styles button within .portfolio-cont-col*/
+.recruiter-btn, .recruiter-btn:hover {
+  border-color: #afa04c;
+  color: #fff;
+  background-color: #afa04c;
+}
+
+/* Forces year and location to remain inline on smaller screens */
+.portfolio-title, .portfolio-subtitle {
+  display: block;
+}
+
+/* Alters font for modal elements {p, aside, h4-h6, em, b} */
+.modal, .sub-parameter-title {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+/* Styles and gvoerns behavior for modal close button on smaller devices */
+.close, .close:hover, .close:focus {
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 1.25rem;
+  margin-top: 5px;
+  float: right;
+  /* removes the outline of the 'X' when clicked */
+  outline: none;
+}
+
+/* Adds a golden border around all major sections of modal */
+.modal-row {
+  border: 0.5px solid #afa04c;
+}
+
+/* Cretaes a border between position/location and Highlights */
+.title-location-cont, .right-grid-border {
+  border-right: 0.5px solid #afa04c;
+}
+
+.left-grid-border {
+  border-left: 0.5px solid #afa04c;
+}
+
+/* .right-grid-border {
+  border-right: 0.5px solid #fff;
+} */
+
+/* Creaes a white bottom border between social media rows */
+.social-media-row-bttm {
+  border-bottom: 0.5px solid #fff;
+}
+
+/* Changes the color of a statistical value to #afa04c */
+.stat-number {
+  color: #afa04c;
+}
+
+/* Makes font size of PR definition smaller */
+.pr-def {
+  font-size: 0.9rem;
+}
+
+@media (max-width: 767px) {
+  /* Adds a bottom broder on smaller screens */
+  .title-location-cont {
+    border-bottom: 0.5px solid #afa04c;
+  }
+
+  /* Creates space (padding) between address and top of container/border */
+  .off-address-containter {
+    padding: 15px 15px 0;
+  }
+
+  /* Increases map's bottom padding to 10px for map and decreases top to 0px*/
+  .map {
+    padding: 0 0 10px;
+  }
+}
+
+/* Adds a left border to seperate portfolio parameter and its details */
+@media (min-width: 992px) {
+  .stat-type-cont {
+    border-left: 0.5px solid #afa04c;
+  }
+}
+
+@media (max-width: 991px) {
+  /* Adds top margin to sub parameter titles on smaller devices */
+  .sub-parameter-container {
+    padding: 10px 5px 5px 0;
+    border-bottom: 1px dashed #fff;
+  }
+}

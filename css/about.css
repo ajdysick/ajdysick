@@ -1,0 +1,126 @@
+/* ******************** IDs ******************** */
+
+/* Removes padding from About.html pic gallery */
+#about-pic-gallery {
+  padding: 0;
+  margin: 0;
+}
+
+/* ******************** Classess ******************** */
+
+.about-background-img {
+  background-image: url("../images/oriental-tiles.png");
+  height: 400px;
+  position: relative;
+}
+
+.header-prompt-container {
+  position: relative;
+  z-index: 1;
+}
+
+.header-prompt-get-to-know {
+  color: #afa04c;
+  background-color: #fff;
+  position: absolute;
+  margin-top: 350px;
+  padding: 5px 10px;
+}
+
+.factoid-thumbnail {
+  border-radius: 50%;
+  border: 4px #fff solid;
+  max-height: 150px;
+}
+
+.factoid-list {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+/* Styles hobby category to be #afa04c and large */
+/* Changes height and color of hobby icons */
+.hobby-type, .hobby-icon {
+  font-size: 2.5rem;
+  color: #afa04c;
+  height: 100%;
+}
+
+/* Styles description of specifc hooby/activity */
+.hobby-name {
+  color: #132238;
+  font-size: 0.8rem;
+}
+
+/* Creates a horizontal divider between hobby types */
+.hobby-divider {
+  border-bottom: 1.5px dashed #afa04c;
+  border-top: none;
+}
+
+/* Removes padding and margin from pic gallery figure & images*/
+.pic-gallery-container {
+  padding: 0;
+  margin: 0;
+}
+
+/* Adds an underline to the Image Gallery Title */
+.img-gall-title {
+  text-decoration: underline #afa04c;
+}
+
+/* Adds 50px of padding to a div */
+.pad-50 {
+  padding: 0 50px;
+}
+
+
+/* ******************** Media Queries ******************** */
+/* Adjust Hobby Grid border styling on landscape ipads/tablets and larger devices */
+@media (min-width: 992px) {
+  /* Styles right border of hobby type */
+  .hobby-type {
+    border-right: solid 1.5px #132238;
+  }
+
+  /* Adds right border for each hobby icon container */
+  .icon-inner-cont {
+    border-right: solid 1.5px #393b3d;
+    border-right: solid 1.5px rgba(57, 59, 61, 0.75);
+  }
+}
+
+/* Adjust Hobby Grid border styling on portrait ipads/tablets and smaller devices */
+@media (max-width: 991px) {
+  /* Adds space (margin) below each Hobby category title */
+  .hobby-type {
+    padding-bottom: 20px;
+  }
+
+  /* Adds margin to the horizontal seperator on smaller devices */
+  .hobby-divider {
+    margin: 20px 0;
+  }
+}
+
+/* Alters padding on Columbus, GA - Home image so image is centered on mobile devices*/
+@media (max-width: 576px) {
+  #personal-factoid-container {
+    padding: 0;
+  }
+}
+
+/* Adds a vertical golden border to 'Resume Prompt' of Ipads/tablets and larger devices*/
+@media (min-width: 768px) {
+  .right-border {
+    border-right: solid 1px #afa04c;
+  }
+}
+
+/* Adds a horizontal golden border to 'Resume Prompt' of Ipads/tablets and smaller devices*/
+@media (max-width: 767px) {
+  .right-border {
+    border-bottom: solid 1px #afa04c;
+    padding-bottom: 25px;
+  }
+}

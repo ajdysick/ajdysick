@@ -1,0 +1,389 @@
+/* ******************** Elements/Tags ******************** */
+
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+}
+
+section {
+  margin: 0;
+  padding: 35px;
+  width: 100%;
+}
+
+/* h1 {
+  font-family: 'Montserrat-bold',sans-serif;
+} */
+
+ h1, h2, h3, h4 {
+  font-family: 'Montserrat-bold', sans-serif;
+  line-height: 1.5;
+}
+
+h5, h6, p, b, em, span, a, i {
+font-family: 'Montserrat-regular', sans-serif;
+line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+footer {
+  padding-top: 25px;
+  width: 100%;
+  background-color: #132238;
+  color: #ebf0f6;
+}
+
+/* Removes light-blue shadow from btns on :focus state */
+button:focus, .btn:focus, .navbar-toggler-icon:focus {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  outline: none;
+}
+
+/* ******************** IDs ******************** */
+
+/* ***** Upper Navbar Styling ***** */
+#upper-navbar {
+  background-color: #ebf0f6;
+  border-bottom: #afa04c 1.5px solid;
+}
+
+/* Home Page Headshot photo styling */
+#headshot {
+  border-radius: 50%;
+  max-height: 315px;
+  max-width: 315px;
+}
+
+#upper-navbar a {
+  color: #132238;
+}
+
+#upper-navbar a:hover {
+  color: #afa04c;
+}
+
+/* Styles font size for 'copyright' on all pages except blog.html */
+#copyright {
+  font-size: 0.85rem;
+  padding: 7px 0 2.5px;
+}
+
+/* ******************** Classess ******************** */
+
+/* Alters Navbar Logo */
+.navbar-brand {
+  padding: 0;
+}
+
+/* Changes dimensions of Navbar Toggler */
+.navbar-logo {
+  height: 75px;
+  width: auto;
+}
+
+/* Changes svg color & border color for navbar */
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(175, 160, 76, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/* Alters color of navbar toggler */
+.custom-toggler .navbar-toggler {
+  border: #132238 solid 1.25px;
+}
+
+/* Section Styling Light (#1) */
+.section-style-light {
+  background-color: #fff;
+  color: #132238;
+}
+
+/* Section Styling Dark (#2) */
+.section-style-dark {
+  background-color: #393b3d;
+  background-color: rgba(57, 59, 61, 0.85);
+  color: #fff;
+}
+
+/* Section Styling Blue (#3) */
+.section-style-blue {
+  color: #132238;
+  background-color: #ebf0f6;
+}
+
+/* Section Styling Gold (#4) */
+.section-style-gold {
+  color: #afa04c;
+  background-color: #ebf0f6;
+}
+
+/* Add padding to section titles (mostly on 'index.html' page) */
+.section-title {
+  padding: 25px;
+}
+
+/* Styles the backets, braces, and seperation lines for position titles */
+.title-role-bracket {
+  color: #afa04c;
+}
+
+/* Adds an underline and increases font size for the skill type names */
+.skill-type {
+  text-decoration: underline #afa04c;
+  font-size: 1.2rem;
+}
+
+.vertical-line {
+  border-left: 3px solid;
+  position: relative;
+  left: 50%;
+  margin-left: -3px;
+  top: 0;
+}
+
+/* Vertical Line (end of 'Prompt' section) */
+.vertical-line-1 {
+  height: 150px;
+  border-color: #afa04c;
+}
+
+/* Vertical Line (end of 'Prompt' section) */
+.vertical-line-2 {
+  height: 100px;
+  margin-bottom: 25px;
+  border-color: #afa04c;
+}
+
+/* Vertical Line (inside 'Get to Know Me' section) */
+.vertical-line-3 {
+  height: 100px;
+  margin-bottom: 0;
+  color: #afa04c;
+  color: rgba(175, 160, 76, 0.85);
+}
+
+/* Adds background pattern/image to 'Personal/Message Details' divs */
+.horiz-rule-background {
+  border-width: 5px;
+  background-image: url("../images/oriental-tiles.png");
+  opacity: 0.7;
+}
+
+/* Adds background pattern/image to 'Personal/Message Details' divs */
+.horiz-rule-2 {
+  border: 0.15px solid #afa04c;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+/* Changes the padding of items within #the-who-container 'right-container' div */
+.right-container {
+  padding: 15px 0;
+}
+
+/* Changes the padding of items within #the-who-container 'left-container' div */
+.left-container {
+  margin: 0;
+  padding: 0;
+}
+
+/* Adds 16px of top/bottom margin to any div */
+.margin-single-rem {
+  margin: 16px 0;
+}
+
+/* Alters 'Google-Map' color scheme/filter*/
+.map {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  /* Alters the greyscale of the map to fit into my color scheme. "invert" specification reverses black and white tones of the greyscale*/
+  filter: grayscale(75%) invert(1);
+}
+
+/* ******* Footer ******* */
+
+/* Centers navbars located in the footer */
+.footer-navbar {
+  display: inline-block;
+  float: none;
+}
+
+/* Changes FOOTER NAVBARS' anchor tag color to #ebf0f6*/
+.footer-navbar a {
+  color: #ebf0f6;
+}
+
+/* Changes FOOTER NAVBARS' anchor tag color to #afa04c*/
+.footer-navbar a:hover {
+  color: #afa04c;
+}
+
+/* Adds a border around social media links */
+.social-media-navbar {
+  margin-top: 4px;
+  border: solid 1px #afa04c;
+}
+
+/* Font color of all text displayed over an image is off-white */
+.txt-over-img {
+  background-color: transparent;
+  color: #fff;
+}
+
+/* Adds bottom marginto 3x1 skill type divs */
+.skill-breakdown-row {
+  margin-bottom: 25px;
+}
+
+/* ***** Button Styles ***** */
+.btn {
+  font-family: 'Montserrat-bold', sans-serif;
+  margin: 5px;
+  border: 1.25px solid;
+}
+
+/* Btn #1: #afa04c border, #132238 text, transparent background */
+.btn-gold {
+  border-color: #afa04c;
+  color: #132238;
+  background-color: transparent;
+}
+
+/* Btn #2: #132238 border, #fff text, #132238 background */
+.btn-blue-white, .btn-blue-transparent:hover, .lg-non-btn-gold:hover {
+  border-color: #132238;
+  color: #fff;
+  background-color: #132238;
+}
+
+/* Btn #3: #132238 border, #afa04c text, transparent background */
+.btn-blue-transparent, .btn-gold:hover {
+  border-color: #132238;
+  color: #afa04c;
+  background-color: transparent;
+}
+
+/* Btn #4: #132238 border, #132238 text, #fff background */
+.btn-blue-white:hover, .txt-over-img-btn, .circle-btn:hover {
+  border-color: #fff;
+  color: #132238;
+  background-color: #fff;
+}
+
+/* Btn #5: #afa04c border, #fff text, #afa04c background */
+.txt-over-img-btn:hover {
+  border-color: #afa04c;
+  color: #fff;
+  background-color: #afa04c;
+}
+
+/* Btn #6: Circular Buttons */
+.circle-btn {
+  width: 50px;
+  height: 50px;
+  padding: 10px 10px;
+  border-radius: 25px;
+  font-size: 1.25rem;
+  text-align: center;
+  color: #afa04c;
+}
+
+/* Styles large non-button col-4 contianer divs */
+.lg-non-btn {
+  font-family: 'Montserrat', sans-serif;
+  margin: 5px;
+  padding: 10px;
+  border: 1.25px solid;
+}
+
+/* Styles large non-button content divs */
+.lg-non-btn-blue {
+  border: none;
+  color: #ebf0f6;
+  background-color: #132238;
+  background-color: rgba(19, 34, 56, 0.9);
+}
+
+.lg-non-btn-gold, .lg-non-btn-gold2 {
+  border-color: #afa04c;
+  color: #132238;
+  background-color: #fff;
+}
+
+/* =========== 'Get to know me' styling ========== */
+/* Changes text color to white in get to know me sections with non-white background */
+.self-description {
+  color: #fff;
+}
+
+.self-professional {
+  background-color: #132238;
+  background-color: rgba(19, 34, 56, 0.85);
+}
+
+.self-musician {
+  background-color: #afa04c;
+  background-color: rgba(175, 160, 76, 0.85);
+}
+
+.self-learner {
+  background-color: #393b3d;
+  background-color: rgba(57, 59, 61, 0.85);
+}
+
+.self-leader {
+background-color: #fff;
+background-color: rgba(255, 255, 255, 0.85);
+border: #afa04c 2px solid;
+border: rgba(175, 160, 76, 0.85) 2px solid;
+color: #132238;
+}
+
+/* ******************** Media Queries ******************** */
+
+/* Navbar Centering (small screen/smartphone) */
+@media (max-width: 767px) {
+  #upper-navbar {
+    text-align: center;
+    font-size: 1.25em;
+  }
+
+  a {
+    color: #132238;
+  }
+
+  a:hover {
+    color: #afa04c;
+  }
+  .upper-nav-duplicate {
+    font-size: 0.9em;
+  }
+}
+
+/* Adds 150px of padding to any div */
+@media (min-width: 1200px) {
+  .pad-150 {
+    padding: 0 150px;
+  }
+}
+
+/* Decreases font size of footer prompt 'Let me...you need' on smaller devices */
+@media (max-width: 576px) {
+  .footer-prompt {
+    font-size: 1.75rem;
+  }
+}

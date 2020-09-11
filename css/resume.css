@@ -1,0 +1,249 @@
+
+
+/* Styles resume.html headshot (ONLY) */
+#resume-headshot {
+  border-radius: 50%;
+  max-height: 200px;
+  max-width: 200px;
+}
+
+/* Styles Skills Modal */
+#hidden-skills {
+  background-color: #393b3d;
+}
+
+#data-timeline {
+  position: relative;
+}
+
+/* Creates a margin bewteen headshot and '[Recruiter...Entrepreneur]' */
+.titles-roles {
+  margin-top: 12.5px;
+}
+
+/* Adds #afa04c background and colors title icons #fff */
+.role-icon {
+  width: 30px;
+  height: 30px;
+  padding: 6px 6px;
+  border-radius: 25px;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  background-color: #afa04c;
+}
+
+/* Modifies horizontal rule w/background to be thinner */
+.horiz-rule-background.horiz-bckgd-sm {
+  border-width: 2.5px;
+}
+
+/* Adds #fff background to education stats & bullets  */
+.edu-stats, .edu-bullet-list-col {
+  background-color: #fff;
+}
+
+/* Styles container for Macalester logo (SVG) */
+.mac-logo-container {
+  background-color: #132238;
+}
+
+/* Adds padding to all sides of MAC logo within blue background */
+.mac-logo {
+  padding: 5px;
+}
+
+/* Places an underline under Macalester's name */
+.college-name {
+  text-decoration: underline #afa04c;
+}
+
+/* Styles education bullet and adds padding */
+.edu-bullet-list {
+  color: #afa04c;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/* Styles education bullet list content*/
+.edu-bullet {
+  color: #132238;
+}
+
+.skill-subset {
+  margin: 10px 5px;
+}
+
+/* Adds spacing (margin) between 'col's of proress bars */
+.progress-bar-container {
+  margin: 7px 0;
+}
+
+/* Changes background color of empty progress bar to #fff */
+.progress {
+  background-color: #fff;
+}
+
+/* Changes the progress bar to #132238 */
+.progress-bar-blue {
+  background-color: #132238;
+}
+
+/* Changes the progress bar to #afa04c */
+.progress-bar-gold {
+  background-color: #afa04c;
+}
+
+/* Changes the size of the skill-bar aside */
+.skill-descript-prg {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
+  font-size: 0.8rem;
+}
+
+.arrow-btn, .arrow-btn:focus, .arrow-btn:hover {
+  outline: none;
+  border: none;
+  color: #fff;
+  background-color: transparent;
+  /* float: right; */
+}
+
+/* Styles downward arrow and 'X' for skill modal */
+.arrow-btn:hover {
+  color: #afa04c;
+}
+
+/* Adds an #afa04c underline udner skill-subset titles in skill modal */
+.skill-modal-subset {
+  text-decoration: underline #afa04c;
+}
+
+/* Creates space (margin) between information about each company */
+.resume-cont-section {
+  margin: 10px auto;
+}
+
+/* Adds #afa04c underline under each company name in resume section */
+.company-name {
+  text-decoration: underline #afa04c;
+}
+
+/* Changes color of position/title inline with job description to #afa04c */
+/* Changes bullet point to #afa04c */
+.inline-title, .bulleted-aside {
+  color: #afa04c;
+}
+
+/* Changes text of bullets (content) back to #132238 */
+.bulleted-aside-text {
+  color: #132238;
+}
+
+/* Alters color, font, and weight of position/title on resume */
+.position-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #393b3d;
+}
+
+/* ********** Creates and styles a left-sided tab for each section ********** */
+.section-title-container {
+  height: 200px;
+  transform: rotate(90deg);
+  transform-origin: top left 0;
+  background-color: #afa04c;
+  position: absolute;
+}
+
+.resume-section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #fff;
+  /* padding: 0;
+  margin-top: 5px;
+  position: inherit; */
+}
+
+/* ******************** Media Queries ******************** */
+
+/* Changes size of the 'titles-roles' h5 element on ipads and landscape phones */
+@media (max-width: 767px) and (min-width: 576px) {
+  .titles-roles {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+/* Changes size of the 'titles-roles' h5 element on portrait phones */
+@media (max-width: 576px) {
+  .titles-roles {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+}
+
+/* Styles #afa04c border-top for education stats of large & medium devices */
+@media (min-width: 768px) {
+  .edu-stats {
+    border-right: 1.25px solid #afa04c;
+  }
+}
+
+/* Styles #afa04c border-bottom for education stats of large & medium devices */
+@media (max-width: 991px) and (min-width: 768px) {
+  .edu-stats {
+    border-bottom: 1.25px solid #afa04c;
+  }
+}
+
+/* Styles #132238 line for education list of large & medium devices */
+@media (min-width: 992px) {
+  .edu-bullet-list-col {
+    border-right: 2.5px solid #132238;
+  }
+}
+
+/* Adds solid line between Education stats and education list on smaller screens/devices*/
+@media (max-width: 767px) {
+  .edu-bullet-list {
+    border-top: 1.5px solid #132238;
+  }
+}
+
+/* Adds/styles right border to 'skill-breakdown' div on larger devices*/
+@media (min-width: 992px) {
+  .breakdown-border-lg {
+    border-right: solid 2px #ebf0f6;
+  }
+}
+
+/* Adds/styles right (visually center) border to 'skill-breakdown' div on smaller devices*/
+@media (max-width: 991px) and (min-width: 768px){
+  .breakdown-border-md-sm {
+    border-right: solid 2px #ebf0f6;
+  }
+}
+
+/* Makes company name smaller on smaller devices [so company name remains on single line] */
+@media (max-width: 575px) {
+  .company-name {
+    font-size: 1.5rem;
+  }
+}
+
+/* Adds a right border between year and position description on medium and larger devices */
+@media (min-width: 768px) {
+  .year-container {
+    border-right: #393b3d;
+    border-right: solid 1.25px rgba(57, 59, 61, 0.75);
+  }
+}
+
+/* Makes 'year' in timeline resume bold on smaller screens */
+@media (max-width: 575px) {
+  .year {
+    font-weight: bold;
+  }
+}

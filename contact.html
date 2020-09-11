@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
 
 <head>
@@ -5,106 +6,468 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="keywords"
     content="aj, dysick, aj dysick, columbus, columbus ga, macalester college, columbus high school, recruiter, recruiting, musician, music, sales, social media, social media recruiting, social media marketing, InSil3nc3, Insil3nc3 LLC, quietly innovating">
-  <title>AJ Dysick - Entrepreneur</title>
+
+  <title>Contact AJ</title>
 
   <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
-  <link rel="manifest" href="images/favicon_io/site.webmanifest">
+  <link rel="icon" type="image/png" href="images/favicon.png">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald:300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@400;&display=swap" rel="stylesheet">
 
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/e1ef2b53fc.js" crossorigin="anonymous"></script>
 
-  <!-- Stylesheets -->
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
   <!-- Local Stylesheets -->
   <link rel="stylesheet" href="css/contact.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/master.css">
 
 </head>
 
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-md navbar-light bg-light">
-    <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Work</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="skills.html">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Personal Factoids</a>
-        </li>
-      </ul>
-    </div>
-    <div class="order-0">
-      <a class="navbar-brand mx-auto" href="index.html">AJ Dysick</a>
-    </div>
-    <div>
-      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target=".dual-collapse2">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </div>
-    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="media.html">Media</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="contact.html">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
 
-  <div class="container" id="contact-container">
-    <!-- <form action="action_page.php">  Thisa action only works with an active server. -->
+  <div class="outer-container">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md fixed-top" id="upper-navbar" role="navigation">
 
-    <form action="mailto:aj@insil3nc3.events" method="post" enctype="text/plain">
+      <!-- (left navbar content/page container) -->
+      <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+        <ul class="navbar-nav mr-auto">
 
-      <h1>Contact Me</h1>
+          <!-- About -->
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <!-- Resume -->
+          <li class="nav-item">
+            <a class="nav-link" href="resume.html">Resume</a>
+          </li>
+          <!-- Portfolio -->
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Data Portfolio</a>
+          </li>
+          <!-- Blog -->
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+        </ul>
+      </div>
 
-      <label for="fname">First Name</label>
-      <input type="text" id="fname" name="firstname" placeholder="your first name..">
+      <!-- (navbar brand/logo) -->
+      <div class="order-0">
+        <a class="navbar-brand mx-auto" href="index.html">
+          <img src="images/logo.png" alt="AJ Dysick" class="navbar-logo"></img>
+        </a>
+      </div>
 
-      <label for="lname">Last Name</label>
-      <input type="text" id="lname" name="lastname" placeholder="your last name..">
+      <!-- (navbar toggle button -->
+      <div>
+        <button class="navbar-toggler ml-atuo custom-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
 
-      <label for="email">Email Address</label>
-      <input type="text" id="email" name="email" placeholder="Your Email Address">
+      <!-- (right navbar content/page container) -->
+      <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <ul class="navbar-nav ml-auto">
 
+          <!-- Contact -->
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
 
-      <label for="subject">Subject</label>
-      <select id="subject" name="subject">
-        <option value="submit-content">Hire me</option>
-        <option value="event">Request a resume</option>
-        <option value="submit-content">Request that I apply</option>
-        <option value="other">Other</option>
-      </select>
+          <!-- OTHER  -->
+          <!-- <li class="nav-item">
+              <a class="nav-link" href="#"></a>
+            </li> -->
 
-      <label for="message">Message</label>
-      <textarea id="messgae" name="message" placeholder="How may I help?" style="height: 200px"></textarea>
+        </ul>
+      </div>
 
-      <input type="submit" class="contact-btn" value="Send">
-      <input type="reset" class="contact-btn" value="Reset">
-      <!-- The value becomes "submit" when action="action_page.php" -->
+    </nav>
 
-    </form>
-  </div>
+    <!-- Upper Header Prompt -->
+    <section id="upper-header-prompt-contact">
 
-  <!-- <div class="container">
-    <p class="backtohome-ref"><em>back to</em><a href="index.html"><img class="home-refLink" src="/Users/ajdysick/Dropbox/Entrepreneurial Ventures/Sonic Progression/images/logo-via-logohub.png"></img></a></p>
-  </div> -->
+      <div class="inner-container txt-over-img">
+
+        <div class="container">
+          <!-- Page Prompt -->
+          <div class="row">
+            <div class="col-lg">
+              <h1>Get in touch.</h1>
+            </div>
+          </div>
+
+          <!-- Call to Action -->
+          <div class="row">
+            <div class="col-lg">
+              <p>Request Info | Hire | Contact</p>
+            </div>
+          </div>
+        </div> <!-- end of 'container' row -->
+
+      </div> <!-- end of 'inner-container' row -->
+
+    </section>
+  </div> <!-- end of 'outer-container' row -->
+
+  <!-- Avenues of Contact -->
+  <section id="contact-avenues" class="section-style-light">
+    <div class="container">
+
+      <!-- Contact/Inquiry Buttons -->
+      <div class="row margin-single-rem">
+
+        <!-- Button #1: Inquire Further -->
+        <div class="col-lg-4 col-md-4 col-12">
+          <button type="button" class="btn contact-btn lg-non-btn lg-non-btn-gold rounded-0" data-toggle="modal" data-target=".contact-form-modal">
+            <!-- Inquiry Type -->
+            <h2 class="button-prompt">Inquire Further</h2>
+
+            <!-- Inquiry Description -->
+            <p>Need more information about my work experience? Need extra character or professional references? Request additional information from me.</p>
+
+            <!-- Inquiry 'Button' -->
+            <h6 class="button-call-to-action">
+              Request Info
+            </h6>
+          </button>
+        </div>
+
+        <!-- Button #2: Hire a Professional -->
+        <div class="col-lg-4 col-md-4 col-12">
+          <button type="button" class="btn contact-btn lg-non-btn lg-non-btn-gold rounded-0" data-toggle="modal" data-target=".contact-form-modal">
+            <!-- Inquiry Type -->
+            <h2 class="button-prompt">Hire a Professional</h2>
+
+            <!-- Inquiry Description -->
+            <p>Are you looking for an adaptable and positive young professional? Could your company capitalize on the hiring of a creative -- an innovator? Contact me.</p>
+
+            <!-- Inquiry 'Button' -->
+            <h6 class="button-call-to-action">
+              Hire Me
+            </h6>
+          </button>
+        </div>
+
+        <!-- Button #3: General Inquiry -->
+        <div class="col-lg-4 col-md-4 col-12">
+          <button type="button" class="btn contact-btn lg-non-btn lg-non-btn-gold rounded-0" data-toggle="modal" data-target=".contact-form-modal">
+            <!-- Inquiry Type -->
+            <h2 class="button-prompt">General Questions</h2>
+
+            <!-- Inquiry Description -->
+            <p>Have questions about other topics? Feel free to contact me about my skills, professional experience, and interests. Otherwise, send a friendly message.</p>
+
+            <!-- Inquiry 'Button' -->
+            <h6 class="button-call-to-action">
+              Get In Touch
+            </h6>
+          </button>
+        </div>
+
+      </div> <!-- end of 'row' div -->
+
+      <!-- Horizontal rule seperator -->
+      <div class="row">
+        <div class="col-12">
+          <hr class="horiz-rule-background">
+        </div>
+      </div> <!-- end of 'row' div -->
+
+      <!-- Direct Contact Info -->
+      <div class="row section-title lg-non-btn lg-non-btn-gold2">
+        <div class="col-12 text-center">
+          <h1 class="section-title">Contact me directly.</h1>
+          <h3 class="">Call
+            <a href="tel:706-289-6759" tab-tabindex="0" class="phone-number"><b>706-289-6759</b></a>
+            [Mon-Fri. 9am - 5pm EST]
+          </h3>
+        </div>
+      </div>
+
+    </div> <!-- end of 'container' div -->
+  </section>
+
+  <!-- Google Map -->
+  <section id="google-map">
+    <iframe class="map"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1947.3505762063037!2d-84.99631120478202!3d32.464552984196565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x888ccdb9fca487c5%3A0xe25789a2a58405ef!2sWhitewater%20Express!5e0!3m2!1sen!2sus!4v1595163431359!5m2!1sen!2sus"
+      width="100%" height="350px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+  </section>
+
+  <!--Contact Form Modal-->
+  <div id="modal-container" class="modal fade contact-form-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content rounded-0">
+
+        <!--Contact Form -->
+        <div class="container" id="contact-form-container">
+          <!-- <form action="mailto:ajdysick@gmail.com?subject=Contact Me - AJ Dysick" method="post" enctype="text/plain"> -->
+          <form action="contact.php" method="post">
+            <div class="container">
+              <!-- Contact Details -->
+              <!-- ***** PERSONAL Details ***** -->
+              <!-- Form Section Title -->
+              <div class="row">
+                <div class="col-11">
+                  <h5 class="form-section-title">Personal Details</h5>
+                </div>
+                <div clas="col-1">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="col-12">
+                  <hr class="horiz-rule-background">
+                </div>
+              </div> <!-- end of 'Contact Details' row div -->
+
+              <!-- Main Criteria: Name -->
+              <div class="row">
+                <!-- Full Name -->
+                <div class="col-12">
+                  <b class="greater-contact-criteria">Full Name*</b>
+                </div>
+                <div class="col-md-6 col-12">
+                  <input type="text" name="firstname" class="form-control" required>
+                  <p class="field-name">First Name</p>
+                </div>
+                <!-- Last Name -->
+                <div class="col-md-6 col-12">
+                  <input type="text" name="lastname" class="form-control" required>
+                  <p class="field-name">Last Name</p>
+                </div>
+              </div> <!-- end of 'row' div -->
+
+              <!-- Main Criteria: Email Address -->
+              <div class="row">
+                <!-- Email -->
+                <div class="col-12">
+                  <p>
+                    <b class="greater-contact-criteria">Email Address*</b>
+                  </p>
+                </div>
+                <!-- Email -->
+                <div class="col-12">
+                  <input type="email" name="email" class="form-control" required>
+                </div>
+              </div> <!-- 'Contact Details' 'Email' row -->
+
+              <!-- Main Criteria: Phone Number -->
+              <div class="row">
+                <!-- Phone -->
+                <div class="col-12 greater-contact-criteria">
+                  <b>Phone Number</b>
+                  <aside class="contact-form-aside">Not required but direct communication is easier.</aside>
+                </div>
+                <!-- Phone Number -->
+                <div class="col-12">
+                  <input type="tel" name="phonenumber" class="form-control">
+                </div>
+              </div> <!-- 'Contact Details' 'Phone Number' row -->
+
+              <br>
+
+              <!-- ***** MESSAGE Details ***** -->
+              <!-- Form Section Title -->
+              <div class="row">
+                <div class="col-12">
+                  <h5 class="form-section-title">Message Details</h5>
+                  <hr class="horiz-rule-background">
+                </div>
+              </div> <!-- end of 'Message Details' row div -->
+
+              <!-- Main Criteria: Action List -->
+              <div class="row">
+                <!-- Message Subject-->
+                <div class="col-12">
+                  <p>
+                    <b class="greater-contact-criteria">Subject*</b>
+                  </p>
+                </div>
+                <!-- Subject (unordered checkbox list) -->
+                <div class="col-12 subject-list">
+                  <!-- Invite to Apply -->
+                  <div class="form-check">
+                    <input type="checkbox" id="invitation" class="form-check-input" name="invitetoapply" value="invite"/>
+                    <label for="invitation" class="form-check-label">Invite me to apply for a position (provide direct link below)</label>
+                  </div>
+                  <!-- Resumbmit Resume/CL -->
+                  <div class="form-check">
+                    <input type="checkbox" id="resubmission-request" class="form-check-input" name="resubmissionrequest" value="resubmit">
+                    <label for="resubmission-request" class="form-check-label">Request that I resubmit my resume & cover letter</label>
+                  </div>
+                  <!-- Additional References -->
+                  <div class="form-check">
+                    <input type="checkbox" id="add-references" class="form-check-input" name="additional-references" value="reference">
+                    <label for="add-references" class="form-check-label">Request additional references</label>
+                  </div>
+                  <!-- Virtual Meeting -->
+                  <div class="form-check">
+                    <input type="checkbox" id="virtual-meeting" class="form-check-input" name="resubmissionrequest" value="resubmit">
+                    <label for="virtual-meeting" class="form-check-label">Request a virtual meeting or conference call</label>
+                  </div>
+                  <!-- Other -->
+                  <div class="form-check">
+                    <input type="checkbox" id="other" class="form-check-input" name="other" value="other">
+                    <label for="other" class="form-check-label">Other (provide details below)</label>
+                  </div>
+                </div>
+              </div> <!-- end of 'Action List' div -->
+
+              <!-- Main Criteria: Direct Link -->
+              <div class="row">
+                <!-- Relevant  Link -->
+                <div class="col-12 greater-contact-criteria">
+                  <b>Relevant Link</b>
+                  <aside class="contact-form-aside">Please provide an active, relevant link in reference to the above request.</aside>
+                </div>
+                <!-- Link -->
+                <div class="col-12">
+                  <input type="url" name="relevantlink" class="form-control">
+                </div>
+              </div> <!-- 'Direct Link' row -->
+
+              <!-- Message Box -->
+              <div class="row">
+                <!-- Message Subject-->
+                <div class="col-12 greater-contact-criteria">
+                  <b>Message*</b>
+                  <aside class="contact-form-aside">Please provide a detailed message in about the selected subject.</aside>
+                </div>
+                <div class="col-12">
+                  <textarea id="message" name="message" class="form-control" rows="3" required></textarea>
+                </div>
+              </div> <!-- end of 'Message Box' row -->
+
+              <br>
+
+              <!--Button Container-->
+              <div class="row text-center">
+                <div class="col-6">
+                  <input type="submit" id="contact-submit-btn" class="btn btn-blue-white rounded-0" value="Submit Message">
+                </div>
+                <div class="col-6">
+                  <input type="reset" id="contact-reset-btn" class="btn btn-blue-transparent rounded-0" value="Reset Form">
+                </div>
+              </div>
+            </div> <!-- end of 'container' div -->
+          </form> <!-- end of 'Contact' form -->
+        </div>
+
+      </div> <!-- end of 'modal-content' div -->
+    </div> <!-- end of 'modal-dialog' div -->
+  </div> <!-- end of 'Contact Form Modal' div -->
+
+  <!-- Footer -->
+  <footer>
+    <div class="container text-center">
+
+      <!-- Footer Prompt -->
+      <div class="row">
+        <div class="col-lg">
+          <h2 class="footer-prompt">Let me be the leader you need.</h2>
+        </div>
+      </div>
+
+      <!-- Footer Navigation Bar -->
+      <div class="row">
+        <div class="col-lg">
+          <nav class="navbar footer-navbar navbar-expand flex upper-nav-duplicate">
+
+            <ul class="navbar-nav">
+              <!-- Home -->
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <!-- About -->
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <!-- Resume -->
+              <li class="nav-item">
+                <a class="nav-link" href="resume.html">Resume</a>
+              </li>
+              <!-- Portfolio -->
+              <li class="nav-item">
+                <a class="nav-link" href="#">Data Portfolio</a>
+              </li>
+              <!-- Blog -->
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <!-- Contact -->
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+
+          </nav>
+        </div>
+      </div> <!-- end of "Footer Nvigation Bar" row -->
+
+      <!-- Copyright -->
+      <div class="row">
+        <div class="col-lg">
+          <p id="copyright" class="my-auto">© 2020 AJ Dysick. All rights reserved.</p>
+        </div>
+      </div> <!-- end of "Copyright" row -->
+
+      <!-- Social Media Navbar -->
+      <div class="row">
+        <div class="col-lg">
+          <nav class="navbar footer-navbar navbar-expand">
+            <!-- Social Media Links -->
+            <ul class="navbar-nav social-media-navbar">
+
+              <!-- Facebook -->
+              <li class="nav-item">
+                <a class="nav-link social-link" href="https://www.facebook.com/ajrvdysick" target="_blank">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+
+              <!-- Instagram -->
+              <li class="nav-item">
+                <a class="nav-link social-link" href="https://www.instagram.com/ajdysick" target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+
+              <!-- LinkedIn -->
+              <li class="nav-item">
+                <a class="nav-link social-link" href="https://www.linkedin.com/in/ajdysick" target="_blank">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+
+              <!-- Email Conact -->
+              <li class="nav-item">
+                <a href="mailto: ajdysick@gmail.com?subject=Personal Website - Contact" class="nav-link social-link">
+                  <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                </a>
+              </li>
+
+            </ul>
+          </nav>
+        </div>
+      </div> <!-- end of "Social Media Navbar" row -->
+
+    </div> <!-- end of "Footer" container -->
+  </footer>
+
+  <!-- ***** My JavaScript ***** -->
+  <script src="js/myscripts.js"></script>
+
+  <!-- ***** Bootstrap Scripts ***** -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 </body>
 

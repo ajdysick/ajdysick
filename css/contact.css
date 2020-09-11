@@ -102,7 +102,7 @@ input[type="checkbox"]:focus, input[type="checkbox"], input[type="checkbox"]:che
 
 /* Container for upper backgorund image/cpntact prompt */
 .outer-container {
-  background-image: url("../images/IMG_8208.jpg");
+  background-image: url("../images/IMG_8208.JPG");
   background-repeat: no-repeat;
   position: relative;
   height: 100vh;

@@ -74,11 +74,6 @@
             <a class="nav-link" href="contact.html">Contact</a>
           </li>
 
-          <!-- OTHER  -->
-          <!-- <li class="nav-item">
-            <a class="nav-link" href="#"></a>
-          </li> -->
-
         </ul>
       </div>
 
@@ -110,7 +105,9 @@
         <!-- Action buttons -->
         <div class="row">
           <!-- (Discover button) -->
-            <a class="btn txt-over-img-btn rounded-0" type="button" role="button" href="about.html">Discover</a>
+          <button class="btn txt-over-img-btn rounded-0" type="button" role="button">
+            <a href="about.html"></a>Discover
+          </button>
           <!-- (Play button) -->
             <!-- <a class="btn btn-blue-white rounded-0" type="button" role="button" href="#">
               <i class="fas fa-play-circle"></i>
@@ -135,7 +132,7 @@
             <div>
               <img src="images/headshot.JPG" id="headshot" class="img-fluid" alt="Headshot: AJ Dysick" data-size="2000x2000"></img>
             </div>
-            <div class="titles-roles">
+            <div class="titles-roles pt-3">
               <h5>
                 <span class="title-role-bracket">[</span>Recruiter<span class="title-role-bracket">]</span>
                 <span class="title-role-bracket">[</span>Web Designer<span class="title-role-bracket">]</span>
@@ -215,7 +212,9 @@
           <!-- Link to Data Portfolio -->
           <div class="row">
             <div class="col-lg">
-              <a class="btn btn-blue-white rounded-0" type="button" role="button" href="resume.html"><em>Explore:</em> My Resume</a>
+              <button class="btn btn-blue-white rounded-0" type="button" role="button">
+                <a href="resume.html"></a><em>Explore:</em> My Resume
+              </button>
             </div>
           </div>
 
@@ -280,7 +279,9 @@
         <div class="row">
           <div class="col-lg">
             <!-- 'Learn more about me' button -->
-            <a class="btn btn-gold rounded-0" type="button" role="button" href="about.html">Learn More: AJ</a>
+            <button class="btn btn-gold rounded-0" type="button" role="button">
+              <a href="about.html"></a>Learn More: AJ
+            </button>
           </div>
         </div>
 
@@ -311,7 +312,9 @@
         <!-- Prompt Button/Link -->
         <div class="row">
           <div class="col-lg">
-            <a class="btn btn-blue-transparent rounded-0" type="button" role="button" href="contact.html">How can I help?</a>
+            <button class="btn btn-blue-transparent rounded-0" type="button" role="button">
+              <a href="contact.html"></a>How can I help?
+            </button>
           </div>
         </div>
 
@@ -332,8 +335,8 @@
           </div>
         </div>
 
-        <!-- Footer Navigation Bar -->
-        <div class="row">
+        <!-- Footer Navigation Bar (Large/Medium Devices) -->
+        <div class="row d-none d-sm-block">
           <div class="col-lg">
             <nav class="footer-navbar navbar-expand upper-nav-duplicate">
 
@@ -352,11 +355,39 @@
                 </li>
                 <!-- Portfolio -->
                 <li class="nav-item">
-                  <a class="nav-link" href="portfolio.html">Data Portfolio</a>
+                  <a class="nav-link" href="portfolio.html">Portfolio</a>
                 </li>
                 <!-- Blog -->
                 <li class="nav-item">
                   <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <!-- Contact -->
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+              </ul>
+
+            </nav>
+          </div>
+        </div> <!-- end of "Footer Nvigation Bar" row -->
+
+        <!-- Footer Navigation Bar (Small Devices) -->
+        <div class="row d-sm-none">
+          <div class="col-lg">
+            <nav class="footer-navbar navbar-expand upper-nav-duplicate">
+
+              <ul class="navbar-nav">
+                <!-- Home -->
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <!-- Resume -->
+                <li class="nav-item">
+                  <a class="nav-link" href="resume.html">Resume</a>
+                </li>
+                <!-- Portfolio -->
+                <li class="nav-item">
+                  <a class="nav-link" href="portfolio.html">Portfolio</a>
                 </li>
                 <!-- Contact -->
                 <li class="nav-item">
@@ -415,12 +446,8 @@
           </div>
         </div> <!-- end of "Social Media Navbar" row -->
 
-
       </div> <!-- end of "Footer container" -->
     </footer>
-
-    <!-- ***** My JavaScript ***** -->
-    <script src="js/myscripts.js"></script>
 
     <!-- ***** Bootstrap Scripts ***** -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

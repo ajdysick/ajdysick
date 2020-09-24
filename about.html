@@ -120,33 +120,37 @@
             <div class="row text-center">
               <!-- Button #1: Factoids -->
               <div class="col-3">
-                <a class="btn circle-btn" type="button" role="button" href="#personal-factoids">
+                <button class="btn circle-btn" type="button" role="button></button">
+                  <a href="#personal-factoids"></a>
                   <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
-                </a>
+                </button>
                 <p>Factoids</p>
               </div>
 
               <!-- Button #2: Hobbies -->
               <div class="col-3">
-                <a class="btn circle-btn " type="button" role="button" href="#my-hobbies">
+                <button class="btn circle-btn" type="button" role="button">
+                  <a href="#my-hobbies"></a>
                   <i class="fa fa-music" aria-hidden="true"></i>
-                </a>
+                </button>
                 <p>Hobbies</p>
               </div>
 
               <!-- Button #3: Play Video  -->
               <div class="col-3">
-                <a class="btn circle-btn" type="button" role="button" href="#personal-video">
+                <button class="btn circle-btn" type="button" role="button">
+                  <a href="#personal-video"></a>
                   <i class="fas fa-play-circle"></i>
-                </a>
+                </button>
                 <p>Meet AJ</p>
               </div>
 
               <!-- Button #4: Photo Gallery -->
               <div class="col-3">
-                <a class="btn circle-btn " type="button" role="button" href="#about-pic-gallery">
+                <button class="btn circle-btn" type="button" role="button">
+                  <a href="#about-pic-gallery"></a>
                   <i class="fa fa-picture-o" aria-hidden="true"></i>
-                </a>
+                </button>
                 <p>Gallery</p>
               </div>
             </div> <!-- end of 'Directional Nav Icons' row div -->
@@ -157,9 +161,10 @@
     </section>
 
     <!-- Personal Factoids -->
-    <section id="personal-factoids" class="section-style-dark">
-      <div class="container text-center" id="personal-factoid-container">
+    <section id="personal-factoids" class="section-style-dark p-0">
+      <div class="container text-center pb-4" id="personal-factoid-container">
 
+        <!-- Factoid Section Title -->
         <div class="row">
           <div class="col-12">
             <h2 class="section-title">Personal Factoids</h2>
@@ -167,7 +172,7 @@
         </div> <!-- end of 'row' div -->
 
         <!-- Factoid Row: Born + Raised -->
-        <div class="row justify-content-left">
+        <div class="row justify-content-left factoid-row">
           <div class="col-lg-2 col-md-2 col-5 text-center">
             <img src="images/factoids/columbus-sqr.jpg" class="img-fluid factoid-thumbnail" alt="Photo of Columbus, GA" data-size="565x565">
           </div> <!-- end of 'col' div -->
@@ -179,23 +184,72 @@
           </div> <!-- end of 'col' div -->
         </div> <!-- end of Born + Raised 'factoid' row div -->
 
+        <!-- Factoid Row: Espresso -->
+        <div class="row justify-content-end factoid-row">
+          <div class="col-lg-5 col-md-5 col-5 pl-0 my-auto">
+            <h6 class="ml-0 my-auto pl-0 text-right">
+              I have an obsession with quality espresso.
+            </h6>
+          </div> <!-- end of 'col' div -->
 
+          <div class="col-lg-2 col-md-2 col-5 text-left">
+            <img src="images/factoids/espresso.jpeg" class="img-fluid factoid-thumbnail" alt="Photo of Columbus, GA" data-size="565x565">
+          </div> <!-- end of 'col' div -->
+        </div> <!-- end of Espresso 'factoid' row div -->
 
+        <!-- Factoid Row: Color Blue -->
+        <div class="row justify-content-left factoid-row">
+          <div class="col-lg-2 col-md-2 col-5 text-center">
+            <img src="images/factoids/blue.jpg" class="img-fluid factoid-thumbnail" alt="Photo of Columbus, GA" data-size="565x565">
+          </div> <!-- end of 'col' div -->
 
-        <!-- OLD Factoid Section  -->
-        <div class="row">
-          <div class="col-lg-6 col-12">
-            <ul class="factoid-list">
-              <li class="list-item">I have an obsession with quality espresso.</li>
-              <li class="list-item">I adore the color blue. My favorite color scheme is blue, gray & white. Most of my wardrobe consists of these three colors.</li>
-              <li class="list-item">I studied in Rome, Italy for 2 weeks. When I left, part of my heart remained.</li>
-              <li class="list-item">I express myself through sound. I have played viola for 10 years, violin for 9 years & piano for 4 years.</li>
-              <li class="list-item">I enjoy zip lining: living in the skies...visiting the ground.</li>
-            </ul>
-          </div>
-        </div>
+          <div class="col-lg-5 col-md-5 col-5 pl-0 my-auto">
+            <h6 class="ml-0 my-auto pl-0 text-left">
+              I adore the color blue. My favorite color scheme is blue, gray & white. Most of my wardrobe consists of these three colors.
+            </h6>
+          </div> <!-- end of 'col' div -->
+        </div> <!-- end of Color Blue 'factoid' row div -->
 
-      </div> <!-- end of 'cotnainer' div -->
+        <!-- Factoid Row: Study Abroad -->
+        <div class="row justify-content-end factoid-row">
+          <div class="col-lg-5 col-md-5 col-5 pl-0 my-auto">
+            <h6 class="ml-0 my-auto pl-0 text-right">
+              I studied in Rome, Italy for 2 weeks. When I left, part of my heart remained.
+            </h6>
+          </div> <!-- end of 'col' div -->
+
+          <div class="col-lg-2 col-md-2 col-5 text-left">
+            <img src="images/factoids/rome-italy.jpg" class="img-fluid factoid-thumbnail" alt="Photo of Columbus, GA" data-size="565x565">
+          </div> <!-- end of 'col' div -->
+        </div> <!-- end of Study Abroad 'factoid' row div -->
+
+        <!-- Factoid Row: Musician -->
+        <div class="row justify-content-left factoid-row">
+          <div class="col-lg-2 col-md-2 col-5 text-center">
+            <img src="images/factoids/music.jpg" class="img-fluid factoid-thumbnail" alt="Photo of Columbus, GA" data-size="565x565">
+          </div> <!-- end of 'col' div -->
+
+          <div class="col-lg-5 col-md-5 col-5 pl-0 my-auto">
+            <h6 class="ml-0 my-auto pl-0 text-left">
+              I express myself through sound. I have played viola for 10 years, violin for 9 years & piano for 4 years.
+            </h6>
+          </div> <!-- end of 'col' div -->
+        </div> <!-- end of Musician 'factoid' row div -->
+
+        <!-- Factoid Row: Zip Lining -->
+        <div class="row justify-content-end factoid-row">
+          <div class="col-lg-5 col-md-5 col-5 pl-0 my-auto">
+            <h6 class="ml-0 my-auto pl-0 text-right">
+              I enjoy zip lining: living in the skies...visiting the ground.
+            </h6>
+          </div> <!-- end of 'col' div -->
+
+          <div class="col-lg-2 col-md-2 col-5 text-left">
+            <img src="images/factoids/zipline.jpg" class="img-fluid factoid-thumbnail" alt="Photo of Columbus, GA" data-size="565x565">
+          </div> <!-- end of 'col' div -->
+        </div> <!-- end of Zip Lining 'factoid' row div -->
+
+      </div> <!-- end of 'container' div -->
     </section>
 
     <!-- My Hobbies -->
@@ -438,26 +492,29 @@
     <!-- My Talents: Resume (prompt) -->
     <section id="my-talents"class="section-style-light">
       <div class="container text-center">
+
         <div class="row">
           <div class="col-lg">
             <!-- Resume/Portfolio Prompt -->
             <h2 class="section-title">Explore my accomplishments, talents & potential.</h2>
           </div>
         </div>
+
         <div class="row">
           <!-- Resume Prompt -->
           <div class="col-md margin-single-rem pad-50 right-border">
-            <p>Delve deeper into my professional accomplishments and talents -- explore my resume. </p>
-            <a class="btn btn-gold rounded-0" type="button" role="button" href="resume.html">
-              <em>View:</em> Resume
-            </a>
+            <p>Delve deeper into my professional accomplishments and talents -- explore my resume.</p>
+            <button class="btn btn-gold rounded-0" type="button" role="button">
+              <a href="resume.html"></a><em>View:</em> Resume
+            </button>
           </div>
+
           <!-- Data Portfolio Prompt -->
           <div class="col-md margin-single-rem pad-50">
             <p>Want more details about my experiences as a recruiter, sales professional, or entrepreneur? Explore the data.</p>
-            <a class="btn btn-blue-transparent rounded-0" type="button" role="button" href="portfolio.html">
-              <em>Explore:</em> Data Portfolio
-            </a>
+            <button class="btn btn-blue-transparent rounded-0" type="button" role="button" >
+              <a href="portfolio.html"></a><em>Explore:</em> Data Portfolio
+            </button>
           </div>
         </div>
       </div>
@@ -474,10 +531,10 @@
           </div>
         </div>
 
-        <!-- Footer Navigation Bar -->
-        <div class="row">
+        <!-- Footer Navigation Bar (Large/Medium Devices) -->
+        <div class="row d-none d-sm-block">
           <div class="col-lg">
-            <nav class="navbar footer-navbar navbar-expand flex upper-nav-duplicate">
+            <nav class="footer-navbar navbar-expand upper-nav-duplicate">
 
               <ul class="navbar-nav">
                 <!-- Home -->
@@ -494,11 +551,39 @@
                 </li>
                 <!-- Portfolio -->
                 <li class="nav-item">
-                  <a class="nav-link" href="portfolio.html">Data Portfolio</a>
+                  <a class="nav-link" href="portfolio.html">Portfolio</a>
                 </li>
                 <!-- Blog -->
                 <li class="nav-item">
                   <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <!-- Contact -->
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+              </ul>
+
+            </nav>
+          </div>
+        </div> <!-- end of "Footer Nvigation Bar" row -->
+
+        <!-- Footer Navigation Bar (Small Devices) -->
+        <div class="row d-sm-none">
+          <div class="col-lg">
+            <nav class="footer-navbar navbar-expand upper-nav-duplicate">
+
+              <ul class="navbar-nav">
+                <!-- Home -->
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <!-- Resume -->
+                <li class="nav-item">
+                  <a class="nav-link" href="resume.html">Resume</a>
+                </li>
+                <!-- Portfolio -->
+                <li class="nav-item">
+                  <a class="nav-link" href="portfolio.html">Portfolio</a>
                 </li>
                 <!-- Contact -->
                 <li class="nav-item">
@@ -560,9 +645,6 @@
 
       </div> <!-- end of "Footer container" -->
     </footer>
-
-    <!-- ***** My JavaScript ***** -->
-    <script src="js/myscripts.js" type="text/javascript"></script>
 
     <!-- ***** Bootstrap Scripts ***** -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

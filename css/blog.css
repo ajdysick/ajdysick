@@ -1,5 +1,7 @@
 /* Changes page background pattern */
 body {
+  height: 100vh;
+  overflow-y: hidden;
   background:
     linear-gradient(135deg, #132238 25%, transparent 25%) -50px 0,
     linear-gradient(225deg, #fff 25%, transparent 25%) -50px 0,
@@ -13,37 +15,26 @@ body {
 /* Alters navbar on this page ONLY */
 #blog-navbar {
   background-color: #ebf0f6;
-}
-
-/* Changes anchor tag color on this page only */
-#blog-navbar a {
-  color: #132238;
-}
-
-/* Changes anchor tag color (on hover) on this page only */
-#blog-navbar a:hover {
-  color: #afa04c;
+  position: relative;
 }
 
 #no-post-yet {
-  background-color: #ebf0f6;
-  height: 250px;
-  margin-top: 150px;
+  background-color: transparent;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  position: relative;
 }
 
-/* styles background of FOOTER and FOOTER navbar on this page ONLY */
 #blog-footer {
   background-color: #ebf0f6;
   color: #132238;
-  padding-top: 10px;
 }
 
-/* Changes anchor tag color of footer links on this page only */
 #blog-footer a {
   color: #132238;
 }
 
-/* Changes anchor tag color (on hover) of footer links on this page only */
 #blog-footer a:hover {
   color: #afa04c;
 }
@@ -56,15 +47,17 @@ body {
 
 /* Places 'row' div in the center of the 'container' div */
 .info-container {
-  height: 150px;
+  background-color: #ebf0f6;
+  height: 100%;
   width: auto;
-  margin-top: 15px;
+  padding: 15px 0;
 }
 
 /* Changes color of 'Sorry...Yet!' apology */
 .notification {
   color: #132238;
   font-weight: bold;
+  font-size: 2rem;
 }
 
 /* Changes color of 'check back later' prompt */

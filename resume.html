@@ -97,9 +97,9 @@
       <!-- Download button -->
       <div class="row">
         <div class="col-lg">
-          <a class="btn txt-over-img-btn rounded-0" type="button" role="button" download target="_blank" href="docs/Dysick - Resume.pdf">
-            Download Resume
-          </a>
+          <button class="btn txt-over-img-btn rounded-0" type="button" role="button">
+            <a download target="_blank" href="docs/Dysick - Resume.pdf"></a>Download Resume
+          </button>
         </div>
       </div> <!-- end of "row" div -->
 
@@ -144,33 +144,37 @@
           <div class="row text-center">
             <!-- Button #1: Education -->
             <div class="col-3">
-              <a class="btn circle-btn" type="button" role="button" href="#education">
+              <button class="btn circle-btn" type="button" role="button">
+                <a href="#education"></a>
                 <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-              </a>
+              </button>
               <p>Education</p>
             </div>
 
             <!-- Button #2: Skills -->
             <div class="col-3">
-              <a class="btn circle-btn" type="button" role="button" href="#skills">
+              <button class="btn circle-btn" type="button" role="button">
+                <a href="#skills"></a>
                 <i class="fa fa-code" aria-hidden="true"></i>
-              </a>
+              </button>
               <p>Skills</p>
             </div>
 
             <!-- Button #3: Work Experience -->
             <div class="col-3">
-              <a class="btn circle-btn" type="button" role="button" href="#data-timeline">
+              <button class="btn circle-btn" type="button" role="button">
+                <a href="#data-timeline"></a>
                 <i class="fa fa-briefcase" aria-hidden="true"></i>
-              </a>
+              </button>
               <p>Work</p>
             </div>
 
             <!-- Button #4: Data Portfolio -->
             <div class="col-3">
-              <a class="btn circle-btn" type="button" role="button" href="portfolio.html">
+              <button class="btn circle-btn" type="button" role="button">
+                <a href="portfolio.html"></a>
                 <i class="fa fa-area-chart" aria-hidden="true"></i>
-              </a>
+              </button>
               <p>Portfolio</p>
             </div>
           </div> <!-- end of 'Directional Nav Icons' -->
@@ -400,7 +404,7 @@
         </div> <!-- end of 'Skill Breakdown Sub-section' div -->
 
         <!-- Arrow (Show more sub-section) -->
-        <div class="col-lg-1 col-12 text-center my-auto">
+        <div class="col-lg-1 col-12 text-center my-auto pt-3">
           <button class="arrow-btn my-auto" data-toggle="modal" data-target=".hidden-skills-modal">
             <i class="fa fa-arrow-circle-down fa-2x" aria-hidden="true"></i>
           </button>
@@ -761,10 +765,10 @@
         </div>
       </div>
 
-      <!-- Footer Navigation Bar -->
-      <div class="row">
+      <!-- Footer Navigation Bar (Large/Medium Devices) -->
+      <div class="row d-none d-sm-block">
         <div class="col-lg">
-          <nav class="navbar footer-navbar navbar-expand flex upper-nav-duplicate">
+          <nav class="footer-navbar navbar-expand upper-nav-duplicate">
 
             <ul class="navbar-nav">
               <!-- Home -->
@@ -781,11 +785,39 @@
               </li>
               <!-- Portfolio -->
               <li class="nav-item">
-                <a class="nav-link" href="portfolio.html">Data Portfolio</a>
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
               </li>
               <!-- Blog -->
               <li class="nav-item">
                 <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <!-- Contact -->
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+
+          </nav>
+        </div>
+      </div> <!-- end of "Footer Nvigation Bar" row -->
+
+      <!-- Footer Navigation Bar (Small Devices) -->
+      <div class="row d-sm-none">
+        <div class="col-lg">
+          <nav class="footer-navbar navbar-expand upper-nav-duplicate">
+
+            <ul class="navbar-nav">
+              <!-- Home -->
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <!-- Resume -->
+              <li class="nav-item">
+                <a class="nav-link" href="resume.html">Resume</a>
+              </li>
+              <!-- Portfolio -->
+              <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
               </li>
               <!-- Contact -->
               <li class="nav-item">
@@ -847,9 +879,6 @@
 
     </div> <!-- end of "Footer container" -->
   </footer>
-
-  <!-- ***** My JavaScript ***** -->
-  <script src="js/myscripts.js" type="text/javascript"></script>
 
   <!-- ***** Bootstrap Scripts ***** -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

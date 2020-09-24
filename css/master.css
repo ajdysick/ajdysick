@@ -75,12 +75,6 @@ button:focus, .btn:focus, .navbar-toggler-icon:focus {
   color: #afa04c;
 }
 
-/* Styles font size for 'copyright' on all pages except blog.html */
-#copyright {
-  font-size: 0.85rem;
-  padding: 7px 0 2.5px;
-}
-
 /* ******************** Classess ******************** */
 
 /* Alters Navbar Logo */
@@ -368,9 +362,6 @@ color: #132238;
 
   a:hover {
     color: #afa04c;
-  }
-  .upper-nav-duplicate {
-    font-size: 0.9em;
   }
 }
 

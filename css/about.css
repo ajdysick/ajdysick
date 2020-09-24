@@ -27,6 +27,10 @@
   padding: 5px 10px;
 }
 
+.factoid-row {
+  margin: 5px 0;
+}
+
 .factoid-thumbnail {
   border-radius: 50%;
   border: 4px #fff solid;
@@ -122,5 +126,17 @@
   .right-border {
     border-bottom: solid 1px #afa04c;
     padding-bottom: 25px;
+  }
+}
+
+@media (min-width: 992px) {
+  .factoid-row {
+    padding: 0 125px;
+  }
+}
+
+@media (max-width: 991px) {
+  .factoid-row {
+    padding: 0;
   }
 }

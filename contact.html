@@ -207,8 +207,8 @@
 
         <!--Contact Form -->
         <div class="container" id="contact-form-container">
-          <form action="mailto:ajdysick@gmail.com?subject=Contact Me - AJ Dysick" method="post" enctype="text/plain">
-          <!-- <form action="contact.php" method="post"> -->
+          <!-- <form action="mailto:ajdysick@gmail.com?subject=Contact Me - AJ Dysick" method="post" enctype="text/plain"> -->
+          <form action="contact.php" method="post">
             <div class="container">
               <!-- Contact Details -->
               <!-- ***** PERSONAL Details ***** -->
@@ -375,10 +375,10 @@
         </div>
       </div>
 
-      <!-- Footer Navigation Bar -->
-      <div class="row">
+      <!-- Footer Navigation Bar (Large/Medium Devices) -->
+      <div class="row d-none d-sm-block">
         <div class="col-lg">
-          <nav class="navbar footer-navbar navbar-expand flex upper-nav-duplicate">
+          <nav class="footer-navbar navbar-expand upper-nav-duplicate">
 
             <ul class="navbar-nav">
               <!-- Home -->
@@ -395,11 +395,39 @@
               </li>
               <!-- Portfolio -->
               <li class="nav-item">
-                <a class="nav-link" href="#">Data Portfolio</a>
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
               </li>
               <!-- Blog -->
               <li class="nav-item">
                 <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <!-- Contact -->
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+
+          </nav>
+        </div>
+      </div> <!-- end of "Footer Nvigation Bar" row -->
+
+      <!-- Footer Navigation Bar (Small Devices) -->
+      <div class="row d-sm-none">
+        <div class="col-lg">
+          <nav class="footer-navbar navbar-expand upper-nav-duplicate">
+
+            <ul class="navbar-nav">
+              <!-- Home -->
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <!-- Resume -->
+              <li class="nav-item">
+                <a class="nav-link" href="resume.html">Resume</a>
+              </li>
+              <!-- Portfolio -->
+              <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
               </li>
               <!-- Contact -->
               <li class="nav-item">
@@ -460,9 +488,6 @@
 
     </div> <!-- end of "Footer" container -->
   </footer>
-
-  <!-- ***** My JavaScript ***** -->
-  <script src="js/myscripts.js"></script>
 
   <!-- ***** Bootstrap Scripts ***** -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

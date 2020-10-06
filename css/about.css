@@ -1,5 +1,14 @@
 /* ******************** IDs ******************** */
 
+#headshot {
+  max-width: 300px;
+  max-height: auto;
+}
+/* Creates a bottom margin between factoids and hobby section */
+#personal-factoid-container {
+  padding-bottom: 100px;
+}
+
 /* Removes padding from About.html pic gallery */
 #about-pic-gallery {
   padding: 0;
@@ -24,11 +33,7 @@
   background-color: #fff;
   position: absolute;
   margin-top: 350px;
-  padding: 5px 10px;
-}
-
-.factoid-row {
-  margin: 5px 0;
+  padding: 5px 5px;
 }
 
 .factoid-thumbnail {
@@ -104,13 +109,6 @@
   /* Adds margin to the horizontal seperator on smaller devices */
   .hobby-divider {
     margin: 20px 0;
-  }
-}
-
-/* Alters padding on Columbus, GA - Home image so image is centered on mobile devices*/
-@media (max-width: 576px) {
-  #personal-factoid-container {
-    padding: 0;
   }
 }
 

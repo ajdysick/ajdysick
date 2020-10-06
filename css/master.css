@@ -20,12 +20,14 @@ section {
 } */
 
  h1, h2, h3, h4 {
-  font-family: 'Montserrat-bold', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
   line-height: 1.5;
 }
 
 h5, h6, p, b, em, span, a, i {
-font-family: 'Montserrat-regular', sans-serif;
+font-family: 'Montserrat', sans-serif;
+/* font-weight: 300; */
 line-height: 1.5;
 }
 
@@ -245,7 +247,8 @@ button:focus, .btn:focus, .navbar-toggler-icon:focus {
 
 /* ***** Button Styles ***** */
 .btn {
-  font-family: 'Montserrat-bold', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
   margin: 5px;
   border: 1.25px solid;
 }
@@ -316,6 +319,16 @@ button:focus, .btn:focus, .navbar-toggler-icon:focus {
   border-color: #afa04c;
   color: #132238;
   background-color: #fff;
+}
+
+/* Changes the color of the link's icon */
+.directional-nav-link {
+  color: #afa04c;
+}
+
+/* Changes the color of the link's icon on hover */
+.directional-nav-link:hover {
+  color: #132238;
 }
 
 /* =========== 'Get to know me' styling ========== */

@@ -28,7 +28,7 @@
   <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-md fixed-top" id="upper-navbar" role="navigation">
+    <nav class="navbar navbar-expand-md" id="upper-navbar" role="navigation">
 
       <!-- (left navbar content/page container) -->
       <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
@@ -99,8 +99,8 @@
         <div class="row">
 
           <!-- Headshot -->
-          <div class="col-lg-4 col-md-6 col-12 text-center my-auto">
-            <img src="images/headshot.JPG" id="headshot" class="img-fluid" alt="AJ Dysick Headshot" data-size="2000x2000"></img>
+          <div class="col-lg-4 col-md-6 col-12 text-center mx-auto my-auto px-0">
+            <img src="images/headshot.JPG" id="headshot" class="img-fluid" alt="AJ Dysick Headshot" width="2000" height="2000"></img>
           </div>
 
           <!-- Introductory Information -->
@@ -119,37 +119,41 @@
             <!-- Directional Nav Icons -->
             <div class="row text-center">
               <!-- Button #1: Factoids -->
-              <div class="col-3">
+              <div class="col-sm-3 col-6">
                 <button class="btn circle-btn" type="button" role="button></button">
-                  <a href="#personal-factoids"></a>
-                  <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                  <a href="#personal-factoids" class="directional-nav-link">
+                    <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                  </a>
                 </button>
                 <p>Factoids</p>
               </div>
 
               <!-- Button #2: Hobbies -->
-              <div class="col-3">
+              <div class="col-sm-3 col-6">
                 <button class="btn circle-btn" type="button" role="button">
-                  <a href="#my-hobbies"></a>
-                  <i class="fa fa-music" aria-hidden="true"></i>
+                  <a href="#my-hobbies" class="directional-nav-link">
+                    <i class="fa fa-music" aria-hidden="true"></i>
+                  </a>
                 </button>
                 <p>Hobbies</p>
               </div>
 
               <!-- Button #3: Play Video  -->
-              <div class="col-3">
+              <div class="col-sm-3 col-6">
                 <button class="btn circle-btn" type="button" role="button">
-                  <a href="#personal-video"></a>
-                  <i class="fas fa-play-circle"></i>
+                  <a href="#personal-video" class="directional-nav-link">
+                    <i class="fas fa-play-circle"></i>
+                  </a>
                 </button>
                 <p>Meet AJ</p>
               </div>
 
               <!-- Button #4: Photo Gallery -->
-              <div class="col-3">
+              <div class="col-sm-3 col-6">
                 <button class="btn circle-btn" type="button" role="button">
-                  <a href="#about-pic-gallery"></a>
-                  <i class="fa fa-picture-o" aria-hidden="true"></i>
+                  <a href="#about-pic-gallery" class="directional-nav-link">
+                    <i class="fa fa-picture-o" aria-hidden="true"></i>
+                  </a>
                 </button>
                 <p>Gallery</p>
               </div>
@@ -161,8 +165,8 @@
     </section>
 
     <!-- Personal Factoids -->
-    <section id="personal-factoids" class="section-style-dark p-0">
-      <div class="container text-center pb-4" id="personal-factoid-container">
+    <section id="personal-factoids" class="section-style-dark py-2 px-2">
+      <div class="container text-center" id="personal-factoid-container">
 
         <!-- Factoid Section Title -->
         <div class="row">
@@ -172,12 +176,12 @@
         </div> <!-- end of 'row' div -->
 
         <!-- Factoid Row: Born + Raised -->
-        <div class="row justify-content-left factoid-row">
+        <div class="row justify-content-left factoid-row py-3">
           <div class="col-lg-2 col-md-2 col-5 text-center">
             <img src="images/factoids/columbus-sqr.jpg" class="img-fluid factoid-thumbnail" alt="Photo of Columbus, GA" data-size="565x565">
           </div> <!-- end of 'col' div -->
 
-          <div class="col-lg-5 col-md-5 col-5 pl-0 my-auto">
+          <div class="col-lg-5 col-md-5 col-5 px-0 my-auto">
             <h6 class="ml-0 my-auto pl-0 text-left">
               I was born and raised in Columbus, GA.
             </h6>
@@ -185,8 +189,8 @@
         </div> <!-- end of Born + Raised 'factoid' row div -->
 
         <!-- Factoid Row: Espresso -->
-        <div class="row justify-content-end factoid-row">
-          <div class="col-lg-5 col-md-5 col-5 pl-0 my-auto">
+        <div class="row justify-content-end factoid-row py-3">
+          <div class="col-lg-5 col-md-5 col-5 px-0 my-auto">
             <h6 class="ml-0 my-auto pl-0 text-right">
               I have an obsession with quality espresso.
             </h6>
@@ -198,12 +202,12 @@
         </div> <!-- end of Espresso 'factoid' row div -->
 
         <!-- Factoid Row: Color Blue -->
-        <div class="row justify-content-left factoid-row">
+        <div class="row justify-content-left factoid-row py-3">
           <div class="col-lg-2 col-md-2 col-5 text-center">
             <img src="images/factoids/blue.jpg" class="img-fluid factoid-thumbnail" alt="Photo of Columbus, GA" data-size="565x565">
           </div> <!-- end of 'col' div -->
 
-          <div class="col-lg-5 col-md-5 col-5 pl-0 my-auto">
+          <div class="col-lg-5 col-md-5 col-5 px-0 my-auto">
             <h6 class="ml-0 my-auto pl-0 text-left">
               I adore the color blue. My favorite color scheme is blue, gray & white. Most of my wardrobe consists of these three colors.
             </h6>
@@ -211,8 +215,8 @@
         </div> <!-- end of Color Blue 'factoid' row div -->
 
         <!-- Factoid Row: Study Abroad -->
-        <div class="row justify-content-end factoid-row">
-          <div class="col-lg-5 col-md-5 col-5 pl-0 my-auto">
+        <div class="row justify-content-end factoid-row py-3">
+          <div class="col-lg-5 col-md-5 col-5 px-0 my-auto">
             <h6 class="ml-0 my-auto pl-0 text-right">
               I studied in Rome, Italy for 2 weeks. When I left, part of my heart remained.
             </h6>
@@ -224,12 +228,12 @@
         </div> <!-- end of Study Abroad 'factoid' row div -->
 
         <!-- Factoid Row: Musician -->
-        <div class="row justify-content-left factoid-row">
+        <div class="row justify-content-left factoid-row py-3">
           <div class="col-lg-2 col-md-2 col-5 text-center">
             <img src="images/factoids/music.jpg" class="img-fluid factoid-thumbnail" alt="Photo of Columbus, GA" data-size="565x565">
           </div> <!-- end of 'col' div -->
 
-          <div class="col-lg-5 col-md-5 col-5 pl-0 my-auto">
+          <div class="col-lg-5 col-md-5 col-5 px-0 my-auto">
             <h6 class="ml-0 my-auto pl-0 text-left">
               I express myself through sound. I have played viola for 10 years, violin for 9 years & piano for 4 years.
             </h6>
@@ -237,8 +241,8 @@
         </div> <!-- end of Musician 'factoid' row div -->
 
         <!-- Factoid Row: Zip Lining -->
-        <div class="row justify-content-end factoid-row">
-          <div class="col-lg-5 col-md-5 col-5 pl-0 my-auto">
+        <div class="row justify-content-end factoid-row pt-3 pb-0">
+          <div class="col-lg-5 col-md-5 col-5 px-0 my-auto">
             <h6 class="ml-0 my-auto pl-0 text-right">
               I enjoy zip lining: living in the skies...visiting the ground.
             </h6>
@@ -253,7 +257,7 @@
     </section>
 
     <!-- My Hobbies -->
-    <section id="my-hobbies" class="#">
+    <section id="my-hobbies">
       <div class="container text-center">
 
         <!-- Hobbies: Creative -->
@@ -365,22 +369,6 @@
 
       </div> <!-- end of 'container' div -->
     </section>
-
-    <!-- Introduction Video -->
-    <!-- <section id="personal-video" class="section-style-gold">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg">
-              Personal Video
-            <video src="">
-
-            </video>
-          </div>
-
-        </div>
-      </div>
-    </section> -->
 
     <!-- Picture Gallery -->
     <section id="about-pic-gallery">

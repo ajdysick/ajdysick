@@ -1,4 +1,4 @@
-horiz-rule-background/* ********** ========== Elements ========== ********** */
+/* ********** ========== Elements ========== ********** */
 
 form {
   color: #132238;
@@ -58,18 +58,6 @@ input[type="checkbox"]:checked {
   outline: 0 none;
 }
 
-input[type="checkbox"]:focus,
-input[type="checkbox"]:active,
-input[type="checkbox"]:before,
-input[type="checkbox"]:checked {
-  background-color: #132238;
-  background-color: rgba(19, 34, 56, 0.85);
-  border-color: #132238;
-  border-color: rgba(19, 34, 56, 1);
-  box-shadow: 0 1px 1px rgba(19, 34, 56, 0.075) inset, 0 0 2px rgba(19, 34, 56, 0.1);
-  outline: 0 none;
-}
-
 /*Changes shadow and border color of checkboxes upon unclick [un-check]*/
 input[type="checkbox"]:focus, input[type="checkbox"], input[type="checkbox"]:checked~input[type="checkbox"]::after {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='transparent' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E");
@@ -82,13 +70,9 @@ input[type="checkbox"]:focus, input[type="checkbox"], input[type="checkbox"]:che
 /* Upper Heaer Prompt Background Image */
 #upper-header-prompt-contact {
   padding: 25px 0;
-  height: 100vh;
+  height: 100%;
+  /* WAS height: 100vh; */
 }
-
-/* Alters 'contact-avenues' seciton padding */
-/* #contact-avenues {
-  padding: auto 0;
-} */
 
 /* Alters 'Google-Map' seciton padding */
 #google-map {
@@ -102,49 +86,84 @@ input[type="checkbox"]:focus, input[type="checkbox"], input[type="checkbox"]:che
 
 /* Container for upper backgorund image/cpntact prompt */
 .outer-container {
-  background-image: url("../images/IMG_8208.jpg");
-  background-repeat: no-repeat;
-  position: relative;
-  height: 100vh;
-  margin-top: 25px;
+  height: 100%;
+  /* WAS height: 100vh; */
 }
 
-/* Increases size of the button prompts */
-.button-prompt {
-  font-size: 2.5rem;
+/* Styles and sizes the header image for page */
+.header-photo-contact {
+  z-index: -1;
+  position: absolute;
+  display: block;
+}
+
+/* Page Title and Contact titels font-weights = 700 [ALWAYS] */
+.page-prompt, .contact-title {
+  font-weight: 700;
+}
+
+/* Adds a background and shadow to text-box placed over header image */
+.text-over-img-container {
+  background-color: #393b3d;
+  background-color: rgba(57, 59, 61, 0.65);
+}
+
+/* Call-to-action located in header */
+.cta-contact {
+  font-weight: 300;
+}
+
+/* Makes the color of the downward arrow button white */
+.arrow-btn {
+  color: #fff;
+}
+
+/* Makes the color of the downward arrow button gold on hover */
+.arrow-btn:hover {
+  color: #afa04c;
+}
+
+/* Changes font weight of the button descriptions */
+.btn-description {
+  font-weight: 400;
+}
+
+/* Changes the color of the contact buttons (bottom prompts) */
+.button-call-to-action {
+  color: #afa04c;
 }
 
 /* Adds an underline and increases font size for the skill type names */
 .contact-btn:hover .button-call-to-action {
   text-decoration: underline #afa04c;
-}
-
-.inner-container {
-  padding-top: 25%;
+  text-decoration: underline;
+  text-decoration-color: #afa04c;
+  color: #fff;
+  font-weight: 300;
 }
 
 /* Adds underline under phone number */
 .phone-number {
   color: #132238;
-  text-decoration: underline #132238;
-
+  text-decoration: underline #afa04c;
+  text-decoration: underline;
+  text-decoration-color: #afa04c;
 }
 
 /* Adds underline under phone number (on hover)*/
 .phone-number:hover {
   color: #afa04c;
-  text-decoration: underline #afa04c;
+  text-decoration: none;
 }
 
 /* ********** Contact Form ********** */
-.form-section-title {
-  font-size: 1.5rem;
+.form-section-title, .close:focus {
+  font-size: 1.75rem;
 }
 
 /* Moves 'X' in pop-up form to the upper-right corner */
 .close:focus {
   float: right;
-  font-size: 2rem;
   /* removes the outline of the 'X' when clicked */
   outline: none;
 }
@@ -163,8 +182,13 @@ input[type="checkbox"]:focus, input[type="checkbox"], input[type="checkbox"]:che
 .contact-form-aside {
   color: #393b3d;
   opacity: 0.6;
-  font-size: 0.8rem;
 }
+
+/*Changes font size of checkbox and label for 'Subject' + aside/helper content */
+.contact-form-aside, .subject-list {
+  font-size: 0.85rem;
+}
+
 
 /*Changes background and border color of 'Subject' checkboxes*/
 .form-check-input, .form-check-input {
@@ -174,37 +198,122 @@ input[type="checkbox"]:focus, input[type="checkbox"], input[type="checkbox"]:che
   border-color: rgba(175, 160, 76, 0.75);
 }
 
-/*Changes font size of checkbox and label for 'Subject'*/
-.subject-list {
-  font-size: 0.9rem;
+/* ********** ========== Media Queries ========== ********** */
+/* // LARGE SCREENS */
+@media (min-width: 1200px)  {
+  .inner-container {
+    padding-top: 10%;
+  }
+
+  /* Increases size of button promopts so each spans two rows */
+  .button-prompt {
+    font-size: 2.75rem;
+  }
 }
 
-/* ********** ========== Media Queries ========== ********** */
+/* Styles the page title of medium screens*/
+@media (min-width: 768px) and (max-width: 1999px) {
+  /* Adds padding between outer and inner content container placed over header image */
+  .inner-container {
+    padding-top: 25%;
+  }
+
+  .page-prompt  {
+    font-size: 3.25rem;
+  }
+}
+
+/* // MEDIUM screens*/
+@media (max-width: 767px) and (min-width: 576px){
+  /* Adds padding between outer and inner content container placed over header image */
+  .inner-container {
+    padding-top: 25%;
+  }
+
+  .arrow-btn-container {
+    padding-top: 10px;
+  }
+
+  /* Adds margin to header-contact-hoto on smaller devices */
+  .header-photo-contact {
+    padding-top: 10%;
+  }
+}
+
+/* // Smaller screens*/
+@media (max-width: 575px) {
+  /* Adds padding between outer and inner content container placed over header image */
+  .inner-container {
+    padding-top: 25%;
+  }
+
+  .page-prompt, .contact-title {
+    font-size: 2.25rem;
+  }
+
+  /* Decreases size of the button prompts on smaller screens */
+  .button-prompt {
+    font-size: 1.75rem;
+  }
+
+  /* Creates space between the arrow and the top of the contact prompts in the header */
+  .arrow-btn-container {
+    padding-top: 10px;
+  }
+
+  /* Adds margin to header-contact-hoto on smaller devices */
+  .header-photo-contact {
+    padding-top: 15%;
+  }
+
+  /* Aligns button content to the left on smaller devices */
+  .contact-btn {
+    text-align: center;
+  }
+
+  /*Enlarges font size of checkbox and label for 'Subject' on small screens*/
+  .subject-list {
+    font-size: 1rem;
+  }
+}
 
 /* Aligns button content to the left on landscape phones and larger */
 @media (min-width: 576px) {
   .contact-btn {
     text-align: left;
   }
-}
 
-/* Aligns button content to the left on smaller devices */
-@media (max-width: 576px) {
-  .contact-btn {
-    text-align: center;
+  .page-prompt, .contact-title {
+    font-size: 2.5rem;
   }
 }
 
 /* Decreases size of the button prompts on tablets and laptops */
-@media (max-width: 1200px) and (min-width: 768px) {
+@media (max-width: 1199px) and (min-width: 768px) {
   .button-prompt {
     font-size: 1.5rem;
   }
 }
 
-/*Enlarges font size of checkbox and label for 'Subject' on small screens*/
-@media (max-width: 576px) {
-  .subject-list {
-    font-size: 1rem;
+/* Decreases size of the button prompts on XTRA SMALL SCREENS ONLY */
+@media (max-width: 380px) {
+  /* Adds margin to header-contact-hoto on smaller devices */
+  .header-photo-contact {
+    padding-top: 25%;
+  }
+
+  .contact-avenues-section {
+    padding: 0 15px 25px;
+  }
+
+  .container {
+    padding: auto 15px;
+  }
+}
+
+@media (max-width: 350px) {
+  /* Adds margin to header-contact-hoto on smaller devices */
+  .inner-container {
+    padding-top: 20%;
   }
 }
